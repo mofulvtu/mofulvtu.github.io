@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="跨域问题 什么是跨域？  如何解决跨域？  1） JSONP跨域 2） 跨域资源共享（CORS）  其他方式    什么是跨域？  跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。 同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的">
+<meta name="description" content="1. 什么是跨域？ 跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。  同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。  同源的判定：以http://www.a.">
 <meta name="keywords" content="跨域,技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="跨域问题">
 <meta property="og:url" content="http://yoursite.com/2019/06/27/跨域问题/index.html">
 <meta property="og:site_name" content="Liuzg&#39;s blog">
-<meta property="og:description" content="跨域问题 什么是跨域？  如何解决跨域？  1） JSONP跨域 2） 跨域资源共享（CORS）  其他方式    什么是跨域？  跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。 同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的">
+<meta property="og:description" content="1. 什么是跨域？ 跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。  同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。  同源的判定：以http://www.a.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-27T12:48:50.848Z">
+<meta property="og:updated_time" content="2019-07-01T07:25:43.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域问题">
-<meta name="twitter:description" content="跨域问题 什么是跨域？  如何解决跨域？  1） JSONP跨域 2） 跨域资源共享（CORS）  其他方式    什么是跨域？  跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。 同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的">
+<meta name="twitter:description" content="1. 什么是跨域？ 跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。  同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。  同源的判定：以http://www.a.">
 
 
 
@@ -347,128 +347,115 @@
       
 
       
-        <h4 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h4><ol>
-<li><p>什么是跨域？</p>
+        <h2 id="1-什么是跨域？"><a href="#1-什么是跨域？" class="headerlink" title="1. 什么是跨域？"></a>1. 什么是跨域？</h2><ul>
+<li><p>跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。</p>
 </li>
-<li><p>如何解决跨域？</p>
-<p> 1） JSONP跨域<br> 2） 跨域资源共享（CORS）</p>
+<li><p>同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</p>
 </li>
-<li>其他方式</li>
-</ol>
-<hr>
-<ol>
-<li><p>什么是跨域？</p>
-<ul>
-<li>跨域，指的是浏览器不能执行其他网站的脚本，浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域。它是由浏览器的同源策略造成的，是浏览器施加的安全限制。</li>
-<li>同源策略（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。</li>
-<li><p>同源的判定：</p>
-<ul>
-<li><p>以<strong><a href="http://www.a.com" target="_blank" rel="noopener">http://www.a.com</a></strong>/view1/page1.html为例，以下表格指出了不同形式的链接是否与其同源：</p>
-<pre><code>| 链接  | 对比 | 是否同源 |
-| ------------- | ------------- |
-| http://**www.b.com**/view2/page1.html | 域名不同  |  否
-| http://www.a.com：**81**/view1/page2.html  | 端口不同  |  否
-| **https**://www.a.com/view1/page2.html | 协议不同  |  否
-| **http://www.a.com**/view2/page2.html | 同协议同域名同端口 | 是
-</code></pre></li>
-</ul>
+<li><p>同源的判定：<br>以<code>http://www.a.com/view1/page1.html</code>为例，以下表格指出了不同形式的链接是否与其同源：</p>
+ <style>
+ table th:first-of-type { 
+     width: 300px;
+ }
+ </style>
+
+
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>链接</th>
+<th>对比</th>
+<th>是否同源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>http://www.b.com/view2/page1.html</code></td>
+<td>域名不同</td>
+<td>否</td>
+</tr>
+<tr>
+<td><code>http://www.a.com：81/view1/page2.html</code></td>
+<td>端口不同</td>
+<td>否</td>
+</tr>
+<tr>
+<td><code>https://www.a.com/view1/page2.html</code></td>
+<td>协议不同</td>
+<td>否</td>
+</tr>
+<tr>
+<td><code>http://www.a.com/view2/page2.html</code></td>
+<td>同协议同域名同端口</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-如何解决跨域？"><a href="#2-如何解决跨域？" class="headerlink" title="2. 如何解决跨域？"></a>2. 如何解决跨域？</h2><ul>
+<li>问题描述：H5端请求SpringMVC工程接口，即：<code>http://a.com.cn</code>（H5端）请求 <code>http://b.com.cn</code>（服务端），产生跨域。</li>
+</ul>
+<h3 id="方法一：Jsonp跨域"><a href="#方法一：Jsonp跨域" class="headerlink" title="方法一：Jsonp跨域"></a><strong>方法一：Jsonp跨域</strong></h3><ul>
+<li><p>首先想到的通过Jsonp方式跨域。 JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题。由于同源策略，一般来说位于 server1.example.com 的网页无法与不是 server1.example.com的服务器沟通，而 HTML的script元素是一个例外。利用script元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 资料，而这种使用模式就是所谓的 JSONP。– 摘自百度百科。   具体实现如下：</p>
 </li>
-</ol>
-<ol start="2">
-<li><p>如何解决跨域？</p>
-<ul>
-<li><p>问题描述：H5端请求SpringMVC工程接口，即：<a href="http://a.com.cn（H5端）请求" target="_blank" rel="noopener">http://a.com.cn（H5端）请求</a> <a href="http://b.com.cn（服务端），产生跨域。" target="_blank" rel="noopener">http://b.com.cn（服务端），产生跨域。</a></p>
+<li><p>服务端:</p>
+<p>第一步：继承AbstractJsonpResponseBodyAdvice。 这里(annotations = Jsonp.class)采用的自定义注解Jsonp，需要跨域的控制器加上该Jsonp注解，则请求该控制器下接口时会根据是否有callback参数来处理客户端请求。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">   	    @ControllerAdvice(annotations = Jsonp.class)</span><br><span class="line">public class JsonpAdvice extends AbstractJsonpResponseBodyAdvice &#123;</span><br><span class="line"></span><br><span class="line">    private final String[] jsonpQueryParamNames;</span><br><span class="line"></span><br><span class="line">    public JsonpAdvice() &#123;</span><br><span class="line">        super(&quot;callback&quot;, &quot;jsonp&quot;);</span><br><span class="line">        this.jsonpQueryParamNames = new String[]&#123;&quot;callback&quot;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void beforeBodyWriteInternal(MappingJacksonValue bodyContainer, MediaType contentType,</span><br><span class="line">                                           MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) &#123;</span><br><span class="line"></span><br><span class="line">        HttpServletRequest servletRequest = ((ServletServerHttpRequest) request).getServletRequest();</span><br><span class="line"></span><br><span class="line">        //如果不存在callback这个请求参数，直接返回，不需要处理为jsonp</span><br><span class="line">        if (ObjectUtils.isEmpty(new String[]&#123;servletRequest.getParameter(&quot;callback&quot;)&#125;)) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        //按设定的请求参数(JsonAdvice构造方法中的this.jsonpQueryParamNames = new String[]&#123;&quot;callback&quot;&#125;;)，处理返回结果为jsonp格式</span><br><span class="line">        for (String name : this.jsonpQueryParamNames) &#123;</span><br><span class="line">            String value = servletRequest.getParameter(name);</span><br><span class="line">            if (value != null) &#123;</span><br><span class="line">                MediaType contentTypeToUse = getContentType(contentType, request, response);</span><br><span class="line">                response.getHeaders().setContentType(contentTypeToUse);</span><br><span class="line">                bodyContainer.setJsonpFunction(value);</span><br><span class="line">                return;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二步：需要跨域的控制器加上该Jsonp注解</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  	  @Jsonp</span><br><span class="line">@Controller</span><br><span class="line">@RequestMapping(&quot;/login/member&quot;)</span><br><span class="line">public class LoginMemberController &#123;&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>方法一：Jsonp跨域</strong></p>
-<ul>
-<li>首先想到的通过Jsonp方式跨域。 JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题。由于同源策略，一般来说位于 server1.example.com 的网页无法与不是 server1.example.com的服务器沟通，而 HTML的script元素是一个例外。利用script元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 资料，而这种使用模式就是所谓的 JSONP。– 摘自百度百科。   具体实现如下：</li>
-<li><p>服务端</p>
-<ul>
-<li>第一步：继承AbstractJsonpResponseBodyAdvice。 这里(annotations = Jsonp.class)采用的自定义注解Jsonp，需要跨域的控制器加上该Jsonp注解，则请求该控制器下接口时会根据是否有callback参数来处理客户端请求。</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">   	    @ControllerAdvice(annotations = Jsonp.class)</span><br><span class="line">public class JsonpAdvice extends AbstractJsonpResponseBodyAdvice &#123;</span><br><span class="line"></span><br><span class="line">    private final String[] jsonpQueryParamNames;</span><br><span class="line"></span><br><span class="line">    public JsonpAdvice() &#123;</span><br><span class="line">        super(&quot;callback&quot;, &quot;jsonp&quot;);</span><br><span class="line">        this.jsonpQueryParamNames = new String[]&#123;&quot;callback&quot;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void beforeBodyWriteInternal(MappingJacksonValue bodyContainer, MediaType contentType,</span><br><span class="line">                                           MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) &#123;</span><br><span class="line"></span><br><span class="line">        HttpServletRequest servletRequest = ((ServletServerHttpRequest) request).getServletRequest();</span><br><span class="line"></span><br><span class="line">        //如果不存在callback这个请求参数，直接返回，不需要处理为jsonp</span><br><span class="line">        if (ObjectUtils.isEmpty(new String[]&#123;servletRequest.getParameter(&quot;callback&quot;)&#125;)) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        //按设定的请求参数(JsonAdvice构造方法中的this.jsonpQueryParamNames = new String[]&#123;&quot;callback&quot;&#125;;)，处理返回结果为jsonp格式</span><br><span class="line">        for (String name : this.jsonpQueryParamNames) &#123;</span><br><span class="line">            String value = servletRequest.getParameter(name);</span><br><span class="line">            if (value != null) &#123;</span><br><span class="line">                MediaType contentTypeToUse = getContentType(contentType, request, response);</span><br><span class="line">                response.getHeaders().setContentType(contentTypeToUse);</span><br><span class="line">                bodyContainer.setJsonpFunction(value);</span><br><span class="line">                return;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>第二步：需要跨域的控制器加上该Jsonp注解</p>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  	  @Jsonp</span><br><span class="line">@Controller</span><br><span class="line">@RequestMapping(&quot;/login/member&quot;)</span><br><span class="line">public class LoginMemberController &#123;&#125;</span><br></pre></td></tr></table></figure>
+<li><p>客户端</p>
+<p>jquery ajax跨域请求前：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> function agreement() &#123;</span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    url: &apos;http://www.b.com/api/find&apos;,</span><br><span class="line">    type: &apos;get&apos;,</span><br><span class="line">    dataType: &apos;jsonp&apos;,// 请求方式为jsonp </span><br><span class="line">    jsonp: &apos;callback&apos;,</span><br><span class="line">    jsonpCallback: &apos;callback&apos;, // 回调函数名</span><br><span class="line">    cache: false,</span><br><span class="line">    success: function(data) &#123;</span><br><span class="line">      var status = data.status,</span><br><span class="line">        content = data.body</span><br><span class="line">      if (status == 0) &#123;</span><br><span class="line">        $(&apos;.conditions&apos;).html(content)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>后台返回报文：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">callback(&#123;</span><br><span class="line">    &quot;status&quot;: 0,</span><br><span class="line">    &quot;message&quot;: null,</span><br><span class="line">    &quot;body&quot;: &quot;用户协议。。。&quot;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="方法二：跨域资源共享（CORS）"><a href="#方法二：跨域资源共享（CORS）" class="headerlink" title="方法二：跨域资源共享（CORS）"></a><strong>方法二：跨域资源共享（CORS）</strong></h3><ul>
+<li><p>解决了GET获取用户协议信息跨域问题后，发现还有个接口需要上传文件，而<strong>Jsonp跨域只支持GET方式</strong>， 所以需要换种方式来解决其他请求方式（POST、PUT等）跨域。</p>
 </li>
-<li><p>客户端 </p>
-<ul>
-<li>jquery ajax跨域请求</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> function agreement() &#123;</span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    url: &apos;http://www.b.com/api/find&apos;,</span><br><span class="line">    type: &apos;get&apos;,</span><br><span class="line">    dataType: &apos;jsonp&apos;,// 请求方式为jsonp </span><br><span class="line">    jsonp: &apos;callback&apos;,</span><br><span class="line">    jsonpCallback: &apos;callback&apos;, // 回调函数名</span><br><span class="line">    cache: false,</span><br><span class="line">    success: function(data) &#123;</span><br><span class="line">      var status = data.status,</span><br><span class="line">        content = data.body</span><br><span class="line">      if (status == 0) &#123;</span><br><span class="line">        $(&apos;.conditions&apos;).html(content)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>返回</p>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">callback(&#123;</span><br><span class="line">    &quot;status&quot;: 0,</span><br><span class="line">    &quot;message&quot;: null,</span><br><span class="line">    &quot;body&quot;: &quot;      用户协议    &quot;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>方法二：跨域资源共享（CORS）</strong></p>
-<ul>
-<li>解决了GET获取用户协议信息跨域问题后，发现还有个接口需要上传文件，而<strong>Jsonp跨域只支持GET方式</strong>， 所以需要换种方式来解决其他请求方式（POST、PUT等）跨域。</li>
 <li><blockquote>
 <p>跨域资源共享(CORS) 是一种机制，它使用额外的 HTTP 头来告诉浏览器让运行在一个 origin (domain) 上的Web应用被准许访问来自不同源服务器上的指定的资源。当一个资源从与该资源本身所在的服务器不同的域、协议或端口请求一个资源时，资源会发起一个跨域 HTTP 请求。    – 摘自：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS" title="HTTP访问控制（CORS）" target="_blank" rel="noopener">HTTP访问控制（CORS）</a></p>
 </blockquote>
-</li>
-<li>既然是使用额外的HTTP头来控制是否支持跨域，那我们可以自定义个过滤器，加上允许跨域的HTTP头，具体实现如下：</li>
-<li><p>服务端</p>
 <ul>
-<li>第一步：自定义过滤器 </li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">      public class SimpleCORSFilter implements Filter &#123;</span><br><span class="line"></span><br><span class="line">       public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException &#123;</span><br><span class="line">      </span><br><span class="line">       HttpServletResponse response = (HttpServletResponse) res;</span><br><span class="line">       HttpServletRequest reqs = (HttpServletRequest) req;  </span><br><span class="line">       //指定哪些域可以访问, *表示所有域都允许</span><br><span class="line">       response.setHeader(&quot;Access-Control-Allow-Origin&quot;,&quot;*&quot;);</span><br><span class="line">       //表示接收的方法  </span><br><span class="line">       response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH&quot;);  </span><br><span class="line">      </span><br><span class="line">       chain.doFilter(req, res);</span><br><span class="line">       </span><br><span class="line">    &#125;</span><br><span class="line">        // ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>既然是使用额外的HTTP头来控制是否支持跨域，那我们可以自定义个过滤器，加上允许跨域的HTTP头，具体实现如下：</p>
 </li>
-<li><p>第二步：配置启动加载过滤器</p>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	　　&lt;filter&gt;</span><br><span class="line">    &lt;filter-name&gt;cors&lt;/filter-name&gt;</span><br><span class="line">    &lt;filter-class&gt;com.liuzg.filter.SimpleCORSFilter&lt;/filter-class&gt;</span><br><span class="line">&lt;/filter&gt;</span><br><span class="line">	</span><br><span class="line">&lt;filter-mapping&gt;</span><br><span class="line">    &lt;filter-name&gt;cors&lt;/filter-name&gt;</span><br><span class="line">    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;</span><br><span class="line">&lt;/filter-mapping&gt;</span><br></pre></td></tr></table></figure>
+<li><p>服务端:</p>
 </li>
 </ul>
+<p>第一步：自定义过滤器 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">      public class SimpleCORSFilter implements Filter &#123;</span><br><span class="line"></span><br><span class="line">       public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException &#123;</span><br><span class="line">      </span><br><span class="line">       HttpServletResponse response = (HttpServletResponse) res;</span><br><span class="line">       HttpServletRequest reqs = (HttpServletRequest) req;  </span><br><span class="line">       //指定哪些域可以访问, *表示所有域都允许</span><br><span class="line">       response.setHeader(&quot;Access-Control-Allow-Origin&quot;,&quot;*&quot;);</span><br><span class="line">       //表示接收的方法  </span><br><span class="line">       response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH&quot;);  </span><br><span class="line">      </span><br><span class="line">       chain.doFilter(req, res);</span><br><span class="line">       </span><br><span class="line">    &#125;</span><br><span class="line">        // ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二步：配置启动加载过滤器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	　　&lt;filter&gt;</span><br><span class="line">    &lt;filter-name&gt;cors&lt;/filter-name&gt;</span><br><span class="line">    &lt;filter-class&gt;com.liuzg.filter.SimpleCORSFilter&lt;/filter-class&gt;</span><br><span class="line">&lt;/filter&gt;</span><br><span class="line">	</span><br><span class="line">&lt;filter-mapping&gt;</span><br><span class="line">    &lt;filter-name&gt;cors&lt;/filter-name&gt;</span><br><span class="line">    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;</span><br><span class="line">&lt;/filter-mapping&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-</li>
+<ul>
 <li><p>CORS方式只需要设置服务端HTTP跨域就得以解决，但是此时又出现新的问题。H5端登录成功且cookies信息已正常写入客户端，但服务端无法从session中取到会员信息！！！经过一番Google,发现没有设置允许携带cookies访问服务。具体原因分析如下：</p>
 <ul>
-<li>1）<strong>XMLHttpRequest.withCredentials</strong>是一个布尔值，它定义了跨站请求是否使用如cookies、authorization headers、或TLS证书这样的身份验证信息。对本站请求来说，withCredentials无效。  – 摘自<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials" title="XMLHttpRequest.withCredentials" target="_blank" rel="noopener">XMLHttpRequest.withCredentials
-</a></li>
-<li>2）<strong>Jsonp跨域</strong>是利用script节点来实现的跨域，类似请求资源文件，是本站请求，所以请求时携带了本域名下的cookies，故可以取到登录信息。</li>
-<li>3）<strong>CORS方式跨域</strong>，是浏览器自动完成，不需要前端特殊处理。浏览器一旦发现是AJAX请求跨域，会添加origin头信息。则withCredentials起作用，但是该属性默认为false,即不携带cookies，所以服务端无法取到登录信息。</li>
+<li><p>1）<strong>XMLHttpRequest.withCredentials</strong>是一个布尔值，它定义了跨站请求是否使用如cookies、authorization headers、或TLS证书这样的身份验证信息。对本站请求来说，withCredentials无效。  – 摘自<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials" title="XMLHttpRequest.withCredentials" target="_blank" rel="noopener">XMLHttpRequest.withCredentials
+</a></p>
+</li>
+<li><p>2）<strong>Jsonp跨域</strong>是利用script节点来实现的跨域，类似请求资源文件，是本站请求，所以请求时携带了本域名下的cookies，故可以取到登录信息。</p>
+</li>
+<li><p>3）<strong>CORS方式跨域</strong>，是浏览器自动完成，不需要前端特殊处理。浏览器一旦发现是AJAX请求跨域，会添加origin头信息。则withCredentials起作用，但是该属性默认为false,即不携带cookies，所以服务端无法取到登录信息。</p>
+</li>
 </ul>
 </li>
 <li><p>跨域资源共享（CORS）跨域携带cookies时需要做如下修改：</p>
+<p>客户端：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line"> url:&apos;http://www.b.com/api/upload&apos;,</span><br><span class="line"> type:&apos;POST&apos;,</span><br><span class="line"> data:formData,</span><br><span class="line"> xhrFields:&#123;</span><br><span class="line">     withCredentials:true // 设置为true,允许携带cookies</span><br><span class="line"> &#125;,</span><br><span class="line"> success:function(data)&#123;</span><br><span class="line">     console.log(&apos;success&apos;,data);</span><br><span class="line"> &#125;,</span><br><span class="line"> error:function(data)&#123;</span><br><span class="line">     console.log(&apos;error&apos;,data);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>服务端:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class SimpleCORSFilter implements Filter &#123;</span><br><span class="line">	</span><br><span class="line">  public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException &#123;</span><br><span class="line">      HttpServletResponse response = (HttpServletResponse) res;</span><br><span class="line">      HttpServletRequest reqs = (HttpServletRequest) req;</span><br><span class="line">	</span><br><span class="line">      String originHeads = reqs.getHeader(&quot;Origin&quot;);</span><br><span class="line">      if (StringUtils.isNotBlank(originHeads)) &#123;</span><br><span class="line">          //设置允许跨域的配置</span><br><span class="line">          response.setHeader(&quot;Access-Control-Allow-Origin&quot;, originHeads);</span><br><span class="line">      &#125;</span><br><span class="line">         //设置允许携带cookies</span><br><span class="line">      response.setHeader(&quot;Access-Control-Allow-Credentials&quot;, &quot;true&quot;);</span><br><span class="line">      response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH&quot;);</span><br><span class="line">      chain.doFilter(req, res);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>客户端：</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line"> url:&apos;http://www.b.com/api/upload&apos;,</span><br><span class="line"> type:&apos;POST&apos;,</span><br><span class="line"> data:formData,</span><br><span class="line"> xhrFields:&#123;</span><br><span class="line">     withCredentials:true // 设置为true,允许携带cookies</span><br><span class="line"> &#125;,</span><br><span class="line"> success:function(data)&#123;</span><br><span class="line">     console.log(&apos;success&apos;,data);</span><br><span class="line"> &#125;,</span><br><span class="line"> error:function(data)&#123;</span><br><span class="line">     console.log(&apos;error&apos;,data);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;)</span><br><span class="line">  ``` </span><br><span class="line">* 服务端</span><br><span class="line">*</span><br></pre></td></tr></table></figure>
-<p>public class SimpleCORSFilter implements Filter {</p>
-<p> public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {</p>
-<pre><code>HttpServletResponse response = (HttpServletResponse) res;
-HttpServletRequest reqs = (HttpServletRequest) req;
-
-String originHeads = reqs.getHeader(&quot;Origin&quot;);
-if (StringUtils.isNotBlank(originHeads)) {
-    //设置允许跨域的配置
-    response.setHeader(&quot;Access-Control-Allow-Origin&quot;, originHeads);
-}
-//设置允许携带cookies
-response.setHeader(&quot;Access-Control-Allow-Credentials&quot;, &quot;true&quot;);
-response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH&quot;);
-chain.doFilter(req, res);
-</code></pre><p> }</p>
-<p><code>`</code></p>
-</li>
 <li><strong>注意：</strong>  如果允许跨域携带cookies，则Access-Control-Allow-Origin不允许使用通配符，只允许单一域名。服务端过滤器根据Origin值设置则符合要求。– 参考 <a href="https://harttle.land/2016/12/28/cors-with-cookie.html" title="CORS 跨域发送 Cookie" target="_blank" rel="noopener">CORS 跨域发送 Cookie</a></li>
 </ul>
 </li>
 </ul>
+<h2 id="3-其他方式实现CORS"><a href="#3-其他方式实现CORS" class="headerlink" title="3. 其他方式实现CORS"></a>3. 其他方式实现CORS</h2><ul>
+<li><p>Spring MVC 4.2 增加 CORS 支持。 在Spring MVC 中增加CORS支持非常简单，可以配置全局的规则，也可以使用@CrossOrigin注解进行细粒度的配置。</p>
 </li>
-</ol>
-<ul>
-<li>其他方式实现CORS<ul>
-<li>Spring MVC 4.2 增加 CORS 支持。 在Spring MVC 中增加CORS支持非常简单，可以配置全局的规则，也可以使用@CrossOrigin注解进行细粒度的配置。</li>
-<li>该方式暂没用到。</li>
-</ul>
+<li><p>该方式暂没用到。</p>
 </li>
 </ul>
 
@@ -645,7 +632,7 @@ chain.doFilter(req, res);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#跨域问题"><span class="nav-number">1.</span> <span class="nav-text">跨域问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是跨域？"><span class="nav-number">1.</span> <span class="nav-text">1. 什么是跨域？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-如何解决跨域？"><span class="nav-number">2.</span> <span class="nav-text">2. 如何解决跨域？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一：Jsonp跨域"><span class="nav-number">2.1.</span> <span class="nav-text">方法一：Jsonp跨域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二：跨域资源共享（CORS）"><span class="nav-number">2.2.</span> <span class="nav-text">方法二：跨域资源共享（CORS）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-其他方式实现CORS"><span class="nav-number">3.</span> <span class="nav-text">3. 其他方式实现CORS</span></a></li></ol></div>
             
 
           </div>
