@@ -389,7 +389,7 @@
 </tbody>
 </table>
 <h2 id="2-如何解决跨域？"><a href="#2-如何解决跨域？" class="headerlink" title="2. 如何解决跨域？"></a>2. 如何解决跨域？</h2><ul>
-<li>问题描述：H5端请求SpringMVC工程接口，即：<code>http://a.com.cn</code>（H5端）请求 <code>http://b.com.cn</code>（服务端），产生跨域。</li>
+<li><strong>问题描述</strong>：H5端请求SpringMVC工程接口，即：<code>http://a.com.cn</code>（H5端）请求 <code>http://b.com.cn</code>（服务端），产生跨域。</li>
 </ul>
 <h3 id="方法一：Jsonp跨域"><a href="#方法一：Jsonp跨域" class="headerlink" title="方法一：Jsonp跨域"></a><strong>方法一：Jsonp跨域</strong></h3><ul>
 <li><p>首先想到的通过Jsonp方式跨域。 JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题。由于同源策略，一般来说位于 server1.example.com 的网页无法与不是 server1.example.com的服务器沟通，而 HTML的script元素是一个例外。利用script元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 资料，而这种使用模式就是所谓的 JSONP。– 摘自百度百科。   具体实现如下：</p>
